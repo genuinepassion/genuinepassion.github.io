@@ -106,7 +106,7 @@
                         className="absolute inset-0 z-0"
                         style={{ transform: `translateY(${offset}px)` }}
                     >
-                        {/* 배경 이미지는 코딩/노트북 관련 무료 이미지 URL로 설정했습니다 */}
+                        {/* 배경 이미지 (기본 무료 이미지 유지) */}
                         <img 
                             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" 
                             alt="Background" 
@@ -120,10 +120,11 @@
                     {/* Content */}
                     <div className="relative z-20 text-center px-6">
                         <div className="mb-6">
+                            {/* [수정 완료] 프로필 이미지 경로 변경됨 */}
                             <img 
-                                src="https://placehold.co/150x150?text=Me" 
+                                src="./images/test.png" 
                                 alt="Profile" 
-                                className="w-32 h-32 rounded-full border-4 border-[#e6c07b] mx-auto shadow-2xl"
+                                className="w-32 h-32 rounded-full border-4 border-[#e6c07b] mx-auto shadow-2xl object-cover"
                             />
                         </div>
                         <h2 className="font-heading text-4xl md:text-5xl font-bold text-[#f3efe6] mb-4 drop-shadow-lg">
@@ -188,7 +189,7 @@
                                         />
                                     </div>
 
-                                    {/* Content Overlay (Always visible part + Hover expansion) */}
+                                    {/* Content Overlay */}
                                     <div className="p-6 relative z-10 bg-[#2a3441]">
                                         <h4 className="font-heading text-xl text-[#f3efe6] mb-2 group-hover:text-[#e6c07b] transition-colors">
                                             {p.title}
